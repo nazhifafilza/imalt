@@ -1,0 +1,6 @@
+{
+  "name": "Animal Rescue Mission: Save Indonesian Wildlife!",
+  "description": "Interactive 3D adventure educational game for Grade IX English microteaching exploring Indonesian fauna: Komodo, Bekantan, and Cendrawasih.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

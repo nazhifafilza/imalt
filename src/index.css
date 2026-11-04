@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Bebas Neue', cursive, sans-serif;
+    --font-body: 'Poppins', sans-serif;
+  }
+  
+  body {
+    font-family: var(--font-body);
+  }
+}
+
+.font-heading {
+  font-family: 'Bebas Neue', cursive, sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.font-body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Custom adventure video game scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(20, 10, 5, 0.85);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #f59e0b, #b45309);
+  border-radius: 6px;
+  border: 1px solid #78350f;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #fbbf24, #d97706);
+}
+
+/* 3D Adventure Video Game Button Styles */
+.btn-game-green {
+  background: linear-gradient(180deg, #34d399 0%, #059669 50%, #047857 100%);
+  box-shadow: 0 6px 0 #064e3b, 0 10px 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.15s ease-out;
+}
+.btn-game-green:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 0 #064e3b, 0 14px 24px rgba(5, 150, 105, 0.4);
+}
+.btn-game-green:active {
+  transform: translateY(3px);
+  box-shadow: 0 3px 0 #064e3b, 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn-game-orange {
+  background: linear-gradient(180deg, #fb923c 0%, #ea580c 50%, #c2410c 100%);
+  box-shadow: 0 6px 0 #7c2d12, 0 10px 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.15s ease-out;
+}
+.btn-game-orange:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 0 #7c2d12, 0 14px 24px rgba(234, 88, 12, 0.4);
+}
+.btn-game-orange:active {
+  transform: translateY(3px);
+  box-shadow: 0 3px 0 #7c2d12, 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn-game-gold {
+  background: linear-gradient(180deg, #fde047 0%, #eab308 50%, #ca8a04 100%);
+  box-shadow: 0 6px 0 #854d0e, 0 10px 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.15s ease-out;
+}
+.btn-game-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 0 #854d0e, 0 14px 24px rgba(234, 179, 8, 0.4);
+}
+.btn-game-gold:active {
+  transform: translateY(3px);
+  box-shadow: 0 3px 0 #854d0e, 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn-game-wood {
+  background: linear-gradient(180deg, #a16207 0%, #78350f 50%, #451a03 100%);
+  box-shadow: 0 6px 0 #271004, 0 10px 20px rgba(0, 0, 0, 0.5);
+  transition: all 0.15s ease-out;
+}
+.btn-game-wood:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 0 #271004, 0 14px 24px rgba(0, 0, 0, 0.5);
+}
+.btn-game-wood:active {
+  transform: translateY(3px);
+  box-shadow: 0 3px 0 #271004, 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Wood frame panel */
+.wood-panel {
+  background: linear-gradient(145deg, #451a03ee, #291003f5);
+  border: 4px solid #b45309;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.6), 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+
+/* Compass & Map parchment effect */
+.parchment {
+  background-color: #fef3c7;
+  background-image: radial-gradient(#d97706 0.75px, transparent 0.75px), radial-gradient(#d97706 0.75px, #fef3c7 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
