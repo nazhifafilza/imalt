@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ANIMALS } from '../../data/gameData';
 import { playClick, playSuccess, playError } from '../../utils/audio';
-import { Search, Eye, Footprints, AlertCircle, Scan, Sparkles } from 'lucide-react';
+import { Search, Eye, Footprints, AlertCircle, Scan } from 'lucide-react';
 
 interface SlideProps {
   onNext: () => void;
@@ -161,7 +161,7 @@ export const Slide05Scanner: React.FC<SlideProps> = ({ onNext, onAddScore }) => 
               <button
                 type="button"
                 onClick={() => handleAnswer('komodo')}
-                className="w-full btn-game-green p-3.5 sm:p-4 rounded-2xl flex items-center justify-between text-left border-2 border-emerald-300 text-white cursor-pointer group"
+                className="w-full btn-game-wood p-3.5 sm:p-4 rounded-2xl flex items-center justify-between text-left border-2 border-amber-600/80 hover:border-amber-400 text-white cursor-pointer group transition-all"
               >
                 <div className="flex items-center gap-3">
                   <span className="flex items-center justify-center w-8 h-8 rounded-xl bg-black/40 font-heading text-xl text-yellow-300 border border-white/20">
@@ -171,28 +171,27 @@ export const Slide05Scanner: React.FC<SlideProps> = ({ onNext, onAddScore }) => 
                     <span className="font-heading text-xl sm:text-2xl tracking-wide block">
                       KOMODO
                     </span>
-                    <span className="text-xs text-emerald-100 font-medium">
+                    <span className="text-xs text-amber-200/80 font-medium">
                       Large reptile • East Nusa Tenggara
                     </span>
                   </div>
                 </div>
-                <Sparkles className="w-5 h-5 text-yellow-300 group-hover:rotate-45 transition-transform" />
               </button>
 
               <button
                 type="button"
                 onClick={() => handleAnswer('bekantan')}
-                className="w-full btn-game-wood p-3.5 sm:p-4 rounded-2xl flex items-center justify-between text-left border-2 border-amber-500 text-white cursor-pointer group"
+                className="w-full btn-game-wood p-3.5 sm:p-4 rounded-2xl flex items-center justify-between text-left border-2 border-amber-600/80 hover:border-amber-400 text-white cursor-pointer group transition-all"
               >
                 <div className="flex items-center gap-3">
-                  <span className="flex items-center justify-center w-8 h-8 rounded-xl bg-black/40 font-heading text-xl text-amber-300 border border-white/20">
+                  <span className="flex items-center justify-center w-8 h-8 rounded-xl bg-black/40 font-heading text-xl text-yellow-300 border border-white/20">
                     B
                   </span>
                   <div>
                     <span className="font-heading text-xl sm:text-2xl tracking-wide block">
                       BEKANTAN
                     </span>
-                    <span className="text-xs text-amber-200 font-medium">
+                    <span className="text-xs text-amber-200/80 font-medium">
                       Reddish-brown monkey • Borneo
                     </span>
                   </div>
@@ -202,7 +201,7 @@ export const Slide05Scanner: React.FC<SlideProps> = ({ onNext, onAddScore }) => 
               <button
                 type="button"
                 onClick={() => handleAnswer('cendrawasih')}
-                className="w-full btn-game-wood p-3.5 sm:p-4 rounded-2xl flex items-center justify-between text-left border-2 border-amber-500 text-white cursor-pointer group"
+                className="w-full btn-game-wood p-3.5 sm:p-4 rounded-2xl flex items-center justify-between text-left border-2 border-amber-600/80 hover:border-amber-400 text-white cursor-pointer group transition-all"
               >
                 <div className="flex items-center gap-3">
                   <span className="flex items-center justify-center w-8 h-8 rounded-xl bg-black/40 font-heading text-xl text-yellow-300 border border-white/20">
@@ -212,7 +211,7 @@ export const Slide05Scanner: React.FC<SlideProps> = ({ onNext, onAddScore }) => 
                     <span className="font-heading text-xl sm:text-2xl tracking-wide block">
                       CENDRAWASIH
                     </span>
-                    <span className="text-xs text-yellow-200 font-medium">
+                    <span className="text-xs text-amber-200/80 font-medium">
                       Colorful bird • Papua
                     </span>
                   </div>

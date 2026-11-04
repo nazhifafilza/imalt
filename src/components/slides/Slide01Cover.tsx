@@ -41,68 +41,74 @@ export const Slide01Cover: React.FC<SlideProps> = ({ onNext }) => {
       </div>
 
       {/* The 3 Main Animals in Hero Showcase */}
-      <div className="relative z-10 w-full max-w-5xl grid grid-cols-3 gap-3 sm:gap-6 my-auto items-center">
+      <div className="relative z-10 w-full max-w-5xl grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 md:gap-6 my-auto items-stretch">
         {/* Komodo */}
-        <div className="group relative flex flex-col items-center bg-stone-950/70 hover:bg-stone-900/80 p-3 rounded-2xl border-2 border-emerald-600/80 shadow-[0_8px_25px_rgba(0,0,0,0.6)] backdrop-blur transition-all duration-300 hover:scale-105">
-          <div className="relative w-28 h-28 sm:w-44 sm:h-44 md:w-52 md:h-52 rounded-xl overflow-hidden border-2 border-emerald-500 shadow-md">
+        <div className="group relative flex flex-row sm:flex-col items-center sm:text-center bg-stone-950/70 hover:bg-stone-900/80 p-2.5 sm:p-3 rounded-2xl border-2 border-emerald-600/80 shadow-[0_8px_25px_rgba(0,0,0,0.6)] backdrop-blur transition-all duration-300 hover:scale-[1.02] sm:hover:scale-105 gap-3">
+          <div className="relative w-20 h-20 sm:w-36 sm:h-36 md:w-48 md:h-48 rounded-xl overflow-hidden border-2 border-emerald-500 shadow-md shrink-0">
             <img
               src={ANIMALS.komodo.image}
               alt="Komodo"
               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
             />
-            <div className="absolute top-2 left-2 bg-emerald-900/90 text-emerald-200 text-[10px] sm:text-xs font-bold px-2 py-0.5 rounded border border-emerald-500">
+            <div className="absolute top-1 left-1 sm:top-2 sm:left-2 bg-emerald-900/90 text-emerald-200 text-[9px] sm:text-xs font-bold px-1.5 sm:px-2 py-0.5 rounded border border-emerald-500">
               REPTILE
             </div>
           </div>
-          <h3 className="font-heading text-xl sm:text-3xl text-emerald-300 mt-2 tracking-wide">
-            KOMODO
-          </h3>
-          <p className="text-[11px] sm:text-xs text-stone-300 flex items-center gap-1">
-            <MapPin className="w-3 h-3 text-emerald-400 shrink-0" />
-            East Nusa Tenggara
-          </p>
+          <div className="text-left sm:text-center">
+            <h3 className="font-heading text-lg sm:text-2xl md:text-3xl text-emerald-300 sm:mt-2 tracking-wide">
+              KOMODO
+            </h3>
+            <p className="text-[11px] sm:text-xs text-stone-300 flex items-center gap-1 mt-0.5">
+              <MapPin className="w-3 h-3 text-emerald-400 shrink-0" />
+              East Nusa Tenggara
+            </p>
+          </div>
         </div>
 
         {/* Bekantan */}
-        <div className="group relative flex flex-col items-center bg-stone-950/70 hover:bg-stone-900/80 p-3 rounded-2xl border-2 border-orange-600/80 shadow-[0_8px_25px_rgba(0,0,0,0.6)] backdrop-blur transition-all duration-300 hover:scale-105">
-          <div className="relative w-28 h-28 sm:w-44 sm:h-44 md:w-52 md:h-52 rounded-xl overflow-hidden border-2 border-orange-500 shadow-md">
+        <div className="group relative flex flex-row sm:flex-col items-center sm:text-center bg-stone-950/70 hover:bg-stone-900/80 p-2.5 sm:p-3 rounded-2xl border-2 border-orange-600/80 shadow-[0_8px_25px_rgba(0,0,0,0.6)] backdrop-blur transition-all duration-300 hover:scale-[1.02] sm:hover:scale-105 gap-3">
+          <div className="relative w-20 h-20 sm:w-36 sm:h-36 md:w-48 md:h-48 rounded-xl overflow-hidden border-2 border-orange-500 shadow-md shrink-0">
             <img
               src={ANIMALS.bekantan.image}
               alt="Bekantan"
               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
             />
-            <div className="absolute top-2 left-2 bg-orange-900/90 text-orange-200 text-[10px] sm:text-xs font-bold px-2 py-0.5 rounded border border-orange-500">
+            <div className="absolute top-1 left-1 sm:top-2 sm:left-2 bg-orange-900/90 text-orange-200 text-[9px] sm:text-xs font-bold px-1.5 sm:px-2 py-0.5 rounded border border-orange-500">
               MAMMAL
             </div>
           </div>
-          <h3 className="font-heading text-xl sm:text-3xl text-orange-300 mt-2 tracking-wide">
-            BEKANTAN
-          </h3>
-          <p className="text-[11px] sm:text-xs text-stone-300 flex items-center gap-1">
-            <MapPin className="w-3 h-3 text-orange-400 shrink-0" />
-            Borneo (Mangrove Forest)
-          </p>
+          <div className="text-left sm:text-center">
+            <h3 className="font-heading text-lg sm:text-2xl md:text-3xl text-orange-300 sm:mt-2 tracking-wide">
+              BEKANTAN
+            </h3>
+            <p className="text-[11px] sm:text-xs text-stone-300 flex items-center gap-1 mt-0.5">
+              <MapPin className="w-3 h-3 text-orange-400 shrink-0" />
+              Borneo (Mangroves)
+            </p>
+          </div>
         </div>
 
         {/* Cendrawasih */}
-        <div className="group relative flex flex-col items-center bg-stone-950/70 hover:bg-stone-900/80 p-3 rounded-2xl border-2 border-yellow-500/80 shadow-[0_8px_25px_rgba(0,0,0,0.6)] backdrop-blur transition-all duration-300 hover:scale-105">
-          <div className="relative w-28 h-28 sm:w-44 sm:h-44 md:w-52 md:h-52 rounded-xl overflow-hidden border-2 border-yellow-400 shadow-md">
+        <div className="group relative flex flex-row sm:flex-col items-center sm:text-center bg-stone-950/70 hover:bg-stone-900/80 p-2.5 sm:p-3 rounded-2xl border-2 border-yellow-500/80 shadow-[0_8px_25px_rgba(0,0,0,0.6)] backdrop-blur transition-all duration-300 hover:scale-[1.02] sm:hover:scale-105 gap-3">
+          <div className="relative w-20 h-20 sm:w-36 sm:h-36 md:w-48 md:h-48 rounded-xl overflow-hidden border-2 border-yellow-400 shadow-md shrink-0">
             <img
               src={ANIMALS.cendrawasih.image}
               alt="Cendrawasih"
               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
             />
-            <div className="absolute top-2 left-2 bg-yellow-950/90 text-yellow-300 text-[10px] sm:text-xs font-bold px-2 py-0.5 rounded border border-yellow-500">
+            <div className="absolute top-1 left-1 sm:top-2 sm:left-2 bg-yellow-950/90 text-yellow-300 text-[9px] sm:text-xs font-bold px-1.5 sm:px-2 py-0.5 rounded border border-yellow-500">
               BIRD
             </div>
           </div>
-          <h3 className="font-heading text-xl sm:text-3xl text-yellow-300 mt-2 tracking-wide">
-            CENDRAWASIH
-          </h3>
-          <p className="text-[11px] sm:text-xs text-stone-300 flex items-center gap-1">
-            <MapPin className="w-3 h-3 text-yellow-400 shrink-0" />
-            Papua (Tropical Forest)
-          </p>
+          <div className="text-left sm:text-center">
+            <h3 className="font-heading text-lg sm:text-2xl md:text-3xl text-yellow-300 sm:mt-2 tracking-wide">
+              CENDRAWASIH
+            </h3>
+            <p className="text-[11px] sm:text-xs text-stone-300 flex items-center gap-1 mt-0.5">
+              <MapPin className="w-3 h-3 text-yellow-400 shrink-0" />
+              Papua (Tropical Forest)
+            </p>
+          </div>
         </div>
       </div>
 

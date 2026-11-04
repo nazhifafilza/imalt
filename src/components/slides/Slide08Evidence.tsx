@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { playClick, playSuccess, playError } from '../../utils/audio';
-import { FileSearch, Sparkles, AlertCircle, Eye, Stamp, ShieldCheck } from 'lucide-react';
+import { FileSearch, AlertCircle, Eye, Stamp, ShieldCheck } from 'lucide-react';
 
 interface SlideProps {
   onNext: () => void;
@@ -138,22 +138,27 @@ export const Slide08Evidence: React.FC<SlideProps> = ({ onNext, onAddScore }) =>
               <button
                 type="button"
                 onClick={() => handleChoice('komodo')}
-                className="w-full btn-game-wood p-3.5 rounded-2xl flex items-center justify-between text-left border-2 border-amber-700 text-white cursor-pointer group"
+                className="w-full btn-game-wood p-3.5 rounded-2xl flex items-center justify-between text-left border-2 border-amber-600/80 hover:border-amber-400 text-white cursor-pointer group transition-all"
               >
                 <div className="flex items-center gap-3">
                   <span className="flex items-center justify-center w-8 h-8 rounded-xl bg-black/40 font-heading text-xl text-yellow-300 border border-white/20">
                     A
                   </span>
-                  <span className="font-heading text-xl sm:text-2xl tracking-wide">
-                    KOMODO
-                  </span>
+                  <div>
+                    <span className="font-heading text-xl sm:text-2xl tracking-wide block">
+                      KOMODO
+                    </span>
+                    <span className="text-xs text-amber-200/80 font-medium">
+                      Large reptile • Strong legs • East Nusa Tenggara
+                    </span>
+                  </div>
                 </div>
               </button>
 
               <button
                 type="button"
                 onClick={() => handleChoice('bekantan')}
-                className="w-full btn-game-green p-3.5 rounded-2xl flex items-center justify-between text-left border-2 border-emerald-300 text-white cursor-pointer group"
+                className="w-full btn-game-wood p-3.5 rounded-2xl flex items-center justify-between text-left border-2 border-amber-600/80 hover:border-amber-400 text-white cursor-pointer group transition-all"
               >
                 <div className="flex items-center gap-3">
                   <span className="flex items-center justify-center w-8 h-8 rounded-xl bg-black/40 font-heading text-xl text-yellow-300 border border-white/20">
@@ -163,26 +168,30 @@ export const Slide08Evidence: React.FC<SlideProps> = ({ onNext, onAddScore }) =>
                     <span className="font-heading text-xl sm:text-2xl tracking-wide block">
                       BEKANTAN
                     </span>
-                    <span className="text-xs text-emerald-100 font-medium">
+                    <span className="text-xs text-amber-200/80 font-medium">
                       Reddish-brown monkey • Long nose • Borneo
                     </span>
                   </div>
                 </div>
-                <Sparkles className="w-5 h-5 text-yellow-300 group-hover:rotate-45 transition-transform" />
               </button>
 
               <button
                 type="button"
                 onClick={() => handleChoice('cendrawasih')}
-                className="w-full btn-game-wood p-3.5 rounded-2xl flex items-center justify-between text-left border-2 border-amber-700 text-white cursor-pointer group"
+                className="w-full btn-game-wood p-3.5 rounded-2xl flex items-center justify-between text-left border-2 border-amber-600/80 hover:border-amber-400 text-white cursor-pointer group transition-all"
               >
                 <div className="flex items-center gap-3">
                   <span className="flex items-center justify-center w-8 h-8 rounded-xl bg-black/40 font-heading text-xl text-yellow-300 border border-white/20">
                     C
                   </span>
-                  <span className="font-heading text-xl sm:text-2xl tracking-wide">
-                    CENDRAWASIH
-                  </span>
+                  <div>
+                    <span className="font-heading text-xl sm:text-2xl tracking-wide block">
+                      CENDRAWASIH
+                    </span>
+                    <span className="text-xs text-amber-200/80 font-medium">
+                      Exotic bird • Colorful feathers • Papua
+                    </span>
+                  </div>
                 </div>
               </button>
             </div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { LAB_CARDS, LabCard } from '../../data/gameData';
+import { LAB_CARDS } from '../../data/gameData';
 import { playClick, playSuccess, playError } from '../../utils/audio';
-import { FlaskConical, CheckCircle2, ArrowRight, RefreshCw, Sparkles, HelpCircle } from 'lucide-react';
+import { FlaskConical, CheckCircle2, ArrowRight, RefreshCw, HelpCircle } from 'lucide-react';
 
 interface SlideProps {
   onNext: () => void;
@@ -81,22 +81,6 @@ export const Slide07Lab: React.FC<SlideProps> = ({ onNext, onAddScore }) => {
     }
   };
 
-  const autoSolve = () => {
-    playSuccess();
-    setAssignments({
-      'komodo_appearance': 'B',
-      'komodo_habitat': 'E',
-      'bekantan_appearance': 'A',
-      'bekantan_habitat': 'D',
-      'cendrawasih_appearance': 'C',
-      'cendrawasih_habitat': 'F',
-    });
-    setSelectedCardId(null);
-    setIsCompleted(true);
-    setFeedback('All profiles accurately matched! (+20 Points)');
-    onAddScore(20);
-  };
-
   const resetAll = () => {
     playClick();
     setAssignments({
@@ -140,15 +124,6 @@ export const Slide07Lab: React.FC<SlideProps> = ({ onNext, onAddScore }) => {
               <span className="text-xs font-mono text-amber-400 font-semibold">
                 EVIDENCE CARDS (SELECT TO ASSIGN):
               </span>
-              <button
-                type="button"
-                onClick={autoSolve}
-                className="text-[11px] text-amber-300 hover:text-white bg-stone-900 hover:bg-stone-800 border border-amber-600/60 px-2 py-0.5 rounded cursor-pointer transition flex items-center gap-1"
-                title="Quick solve for demonstration"
-              >
-                <Sparkles className="w-3 h-3 text-yellow-400" />
-                Quick Match
-              </button>
             </div>
 
             <div className="space-y-2">
