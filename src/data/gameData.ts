@@ -14,11 +14,11 @@ export interface AnimalInfo {
 }
 
 export const GAME_IMAGES = {
-  jungleBg: '/src/assets/images/jungle_adventure_bg_1793589178447.jpg',
-  komodo: '/src/assets/images/komodo_character_1793589178907.jpg',
-  bekantan: '/src/assets/images/bekantan_character_1793589178274.jpg',
-  cendrawasih: '/src/assets/images/cendrawasih_character_1793589180075.jpg',
-  rescueBadge: '/src/assets/images/rescue_badge_1793589179438.jpg',
+  jungleBg: '/img/jungle_adventure_bg_1793589178447.jpg',
+  komodo: '/img/komodo_character_1793589178907.jpg',
+  bekantan: '/img/bekantan_character_1793589178274.jpg',
+  cendrawasih: '/img/cendrawasih_character_1793589180075.jpg',
+  rescueBadge: '/img/rescue_badge_1793589179438.jpg',
 };
 
 export const ANIMALS: Record<'komodo' | 'bekantan' | 'cendrawasih', AnimalInfo> = {
