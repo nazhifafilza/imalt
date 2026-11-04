@@ -1,6 +1,6 @@
 import React from 'react';
 import { playClick } from '../../utils/audio';
-import { Trophy, CheckCircle, Users, BookOpen, Target, Sparkles, Award } from 'lucide-react';
+import { Trophy, CheckCircle, User, BookOpen, Target, Sparkles, Award } from 'lucide-react';
 
 interface SlideProps {
   onNext: () => void;
@@ -9,7 +9,7 @@ interface SlideProps {
 export const Slide04Rules: React.FC<SlideProps> = ({ onNext }) => {
   const instructions = [
     { num: 1, title: 'Complete all five missions.', icon: Target, color: 'text-emerald-400', bg: 'bg-emerald-950/70 border-emerald-600' },
-    { num: 2, title: 'Work with your team.', icon: Users, color: 'text-amber-400', bg: 'bg-amber-950/70 border-amber-600' },
+    { num: 2, title: 'Work individually.', icon: User, color: 'text-amber-400', bg: 'bg-amber-950/70 border-amber-600' },
     { num: 3, title: 'Read the clues carefully.', icon: BookOpen, color: 'text-sky-400', bg: 'bg-sky-950/70 border-sky-600' },
     { num: 4, title: 'Choose or create the correct answer.', icon: CheckCircle, color: 'text-orange-400', bg: 'bg-orange-950/70 border-orange-600' },
     { num: 5, title: 'Collect Rescue Points.', icon: Trophy, color: 'text-yellow-400', bg: 'bg-yellow-950/70 border-yellow-500' },
